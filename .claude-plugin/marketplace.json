@@ -1,0 +1,16 @@
+{
+  "name": "jetbrains-spectrum",
+  "owner": {
+    "name": "JetBrains Spectrum team"
+  },
+  "metadata": {
+    "description": "Claude Code, Codex and Copilot plugins for JetBrains Spectrum."
+  },
+  "plugins": [
+    {
+      "name": "spectrum",
+      "source": "./spectrum",
+      "description": "Spectrum knowledge graph for Claude Code, Codex and Copilot: the MCP server, a usage skill, and hooks that remind the agent to consult it."
+    }
+  ]
+}

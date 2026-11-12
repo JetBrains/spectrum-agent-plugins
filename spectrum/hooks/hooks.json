@@ -1,0 +1,39 @@
+{
+  "description": "Spectrum's session-start project check, reminders, and the opt-in consult gate.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/spectrum_hooks.py\" session-check",
+            "statusMessage": "Spectrum project check"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/spectrum_hooks.py\" prompt-hint",
+            "statusMessage": "Spectrum consult reminder"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Read|Grep|Glob|Bash|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/hooks/consult-gate.sh\"",
+            "statusMessage": "Spectrum consult gate"
+          }
+        ]
+      }
+    ]
+  }
+}

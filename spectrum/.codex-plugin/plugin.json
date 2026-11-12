@@ -1,0 +1,18 @@
+{
+  "name": "spectrum",
+  "version": "production.a957883",
+  "description": "Connects Codex to a Spectrum knowledge graph of your project and reminds the agent to consult it about intent, impact, feature-to-code mapping and business rules before reading code.",
+  "keywords": [
+    "spectrum",
+    "knowledge-graph",
+    "mcp",
+    "requirements"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.codex-plugin/mcp.json",
+  "interface": {
+    "displayName": "Spectrum",
+    "shortDescription": "Ask your project's Spectrum knowledge graph before reading code.",
+    "developerName": "JetBrains Spectrum team"
+  }
+}

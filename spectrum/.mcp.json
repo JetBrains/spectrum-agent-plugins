@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "spectrum": {
+      "type": "http",
+      "url": "https://mcp.spectrum.labs.jb.gg/mcp",
+      "oauth": {
+        "clientId": "spectrum-mcp",
+        "callbackPort": 6274,
+        "callbackUrl": "http://localhost:6274/callback"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "spectrum",
+  "displayName": "Spectrum",
+  "version": "production.a957883",
+  "description": "Connects Claude Code, Codex and Copilot to a Spectrum knowledge graph of your project and reminds the agent to consult it about intent, impact, feature-to-code mapping and business rules before reading code.",
+  "author": {
+    "name": "JetBrains Spectrum team"
+  },
+  "repository": "https://github.com/JetBrains/spectrum-agent-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "spectrum",
+    "knowledge-graph",
+    "mcp",
+    "requirements"
+  ],
+  "userConfig": {
+    "consult_gate": {
+      "type": "boolean",
+      "title": "Consult gate",
+      "description": "Once the agent has made several code searches or reads with no Spectrum call in between, refuse the next one, at most once per time window, with a reason that tells it to ask Spectrum first. Off by default.",
+      "default": false
+    },
+    "consult_gate_after": {
+      "type": "number",
+      "title": "Consult gate: searches before a refusal",
+      "description": "How many code searches or reads with no Spectrum call in between the consult gate lets through before it refuses one.",
+      "default": 3,
+      "min": 1
+    },
+    "consult_gate_window_seconds": {
+      "type": "number",
+      "title": "Consult gate: seconds between refusals",
+      "description": "The consult gate refuses at most one call in this many seconds; every other call goes through.",
+      "default": 120,
+      "min": 0
+    }
+  }
+}
