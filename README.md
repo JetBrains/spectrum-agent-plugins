@@ -2,7 +2,7 @@
 
 Connects a coding agent to Spectrum, the knowledge graph that holds a project's requirements, business rules, features, design decisions and the code that realizes them. It also teaches the agent when to ask Spectrum, so the agent consults it about intent, impact and business rules before it reads code.
 
-This is the **production** build, on the `main` branch, talking to `https://mcp.spectrum.labs.jb.gg/mcp`.
+This is the **production** build, talking to `https://mcp.spectrum.labs.jb.gg/mcp`.
 
 ## What it ships
 
@@ -71,10 +71,6 @@ Codex refreshes a marketplace when you run:
 ```bash
 codex plugin marketplace upgrade jetbrains-spectrum
 ```
-
-## Switching to another build
-
-Remove the `jetbrains-spectrum` marketplace from the host, then follow the Install section on the front page of the other build's branch. In Claude Code, a trusted repository's settings entry takes the place of the user-level one in that repository.
 
 ## Signing in
 

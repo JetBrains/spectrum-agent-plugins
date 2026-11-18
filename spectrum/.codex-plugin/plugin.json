@@ -1,6 +1,6 @@
 {
   "name": "spectrum",
-  "version": "production.a957883",
+  "version": "production.903e769",
   "description": "Connects Codex to a Spectrum knowledge graph of your project and reminds the agent to consult it about intent, impact, feature-to-code mapping and business rules before reading code.",
   "keywords": [
     "spectrum",
