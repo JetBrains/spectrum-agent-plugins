@@ -1,7 +1,7 @@
 {
   "name": "spectrum",
   "displayName": "Spectrum",
-  "version": "production.903e769",
+  "version": "production.3a136bf",
   "description": "Connects Claude Code, Codex and Copilot to a Spectrum knowledge graph of your project and reminds the agent to consult it about intent, impact, feature-to-code mapping and business rules before reading code.",
   "author": {
     "name": "JetBrains Spectrum team"

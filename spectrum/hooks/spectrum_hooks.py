@@ -105,8 +105,7 @@ SPECTRUM_TOOL = re.compile(
     r"^mcp__.+__(query_knowledge|graph_seed_by_query|graph_subgraph|graph_expand|source_quotes)$"
 )
 CODE_READING_TOOLS = frozenset({"Read", "Grep", "Glob"})
-# Bash counts only when it searches or reads files; a build or a test run asks no
-# question Spectrum could answer.
+# Bash counts only when it searches or reads files; a build or a test run asks no question Spectrum could answer.
 SEARCH_COMMANDS = frozenset(
     "grep egrep fgrep rg ag ack find fd cat head tail less more tree sed nl".split()
 )
